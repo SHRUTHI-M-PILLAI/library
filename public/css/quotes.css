@@ -1,0 +1,9 @@
+body{
+    background-image: url(../jpg/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+ }
+ .container{
+     padding: 25px;
+ }

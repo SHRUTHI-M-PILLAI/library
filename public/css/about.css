@@ -1,0 +1,62 @@
+body{
+    background-image: url(../jpg/book3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+ 
+ }
+ h2{
+     color: chartreuse;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     padding-left: 15px;
+     margin: 0cm;
+ }
+ 
+ h1{
+     color: cornsilk;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     font-size: 25px;
+     padding-left: 15px;
+     margin: 0cm;
+ }
+ 
+ ul{
+     list-style-type: none;
+     text-align: center;
+     
+     margin: 0px;
+     
+     
+ }
+ li{
+     float: left;
+     color: darkred;
+     
+ }
+ 
+ li a{
+     padding: 20px;
+     display: block;
+     color: darkblue;
+ }
+ 
+ h3{
+     color: deeppink;
+     font-family: 'Times New Roman', Times, serif;
+     padding:20px;
+     margin: 0cm;
+     font-size: 30px;
+     text-align: center;
+ 
+ }
+ 
+ p{
+     color: rgb(243, 78, 12);
+     font-size: 25px;
+     text-align: center;
+ }
+ 
+ p{
+     
+     padding: 40px;
+     font-size: 20px;
+ }
