@@ -1,31 +1,58 @@
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+.navbar-form input, .form-inline input {
+    width:auto;
+  }
+  
+  
 body{
-    background-image: url(../jpg/pic1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
- 
- }
- .container{
-     margin-top: -14px;
- }
- 
- 
- h1{
-    background-color:blue;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     font-size:10px;
-     padding-left: 15px;
-     margin: 0cm;
-     
- }
- h5{
-        color: blue;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        font-size: medium;
-        
+    padding-top:70px;
+    background-image: url(../jpg/bg3.jpg);
+    background-size: auto;
+    background-repeat:repeat;
+}
+   
+
+
+
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
     
- }
+    
+}
+li{
+    float: left;
+    color: rgb(8, 8, 8);
+    
+}
+
+li a{
+    padding:30px;
+    display: block;
+    color: rgb(5, 5, 5);
+    font-family: bold;
+    font-size: 25px;
+}
+
+h3{
+    color:hsl(177, 93%, 49%);
+    padding-left: 10px;
+    margin: 0cm;
+    text-shadow: darkred;
+    
+}
+
+h1{
+    color: darkviolet;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2cm;
+}
 
 
- 
- 
- 
+

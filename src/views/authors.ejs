@@ -9,22 +9,24 @@
 		<link href="/css/authors.css" rel="stylesheet">
 	</head>
 	<body>
-<header class="navbar navbar-bright navbar-fixed-top" role="banner">
-  <div class="container">
-    <div class="navbar-header">
-      <a href="/" class="navbar-brand">Home</a>
-    </div>
-    <nav class="collapse navbar-collapse" role="navigation">
-      <ul class="nav navbar-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="margin-top: -2cm;">
+      <a class="navbar-brand" href="#">
+        <img src="/jpg/bg3.jpg" height="30" width="40">
+        </a> 
+      <a class="navbar-brand" href="#" style=" color:rgb(249, 249, 250); text-decoration:blue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Central Library</a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
           <%for(i=0;i<nav.length;i++){%>
-        <li>
-          <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
-        </li>
-        <%}%>
-      </ul>
+          <li class="nav-item active">
+            <a class="nav-link" href="<%=nav[i].link%>" style="font-family:'Times New Roman', Times, serif;"><%=nav[i].name%><span class="sr-only">(current)</span></a>
+             </li>
+          <%}%>
+        </ul>
+      </div> 
     </nav>
-  </div>
-</header>
+  </a>
+  
+</nav>
 
 <div id="masthead">  
   <div class="container">
@@ -43,7 +45,7 @@
     
                 <div class="col-md-12"> 
                  <div class="panel">
-                  <div class="panel-body" style="background-color:lightgreen;">
+                  <div class="panel-body" style="background-image: url(/jpg/service.png); background-repeat: no-repeat; background-size: cover;">
           <%for(i=0;i<authors.length;i++){%>
           <div class="row">    
             <br>

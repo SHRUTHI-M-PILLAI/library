@@ -8,32 +8,24 @@ function router(nav){
             
           },
           {
-            title:'Stephen King',
-            
+            title:'Stephen King',           
             img:"stephenking.jpg",
             
           },
           {
-            title:'James Byrd',
-            
-            img:"jamesbyrd.jpg",
-            
+            title:'James Byrd',           
+            img:"jamesbyrd.jpg",            
           }
-        ]
+        ];
 
         updatesRouter.get('/',function(req,res){
-            res.render("signup",{
+            res.render("updates",{
                 nav,
-                     title:'Library',
-                    updates
+                title:'Library',
+                updates
             });
             });
-            
-            
-        
-            return libraryRouter;
+          
+            return updatesRouter;
         }
-        
-        
-        
         module.exports = router;

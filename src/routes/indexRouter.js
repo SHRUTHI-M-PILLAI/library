@@ -1,19 +1,14 @@
 const express = require('express');
 const indexRouter = express.Router();
-function author(){
-    const nav = [
-        {
-            link:'/login',name:'Login'
-    },
-    {
-        link:'/signup',name:'Signup'
-}
-]
+
+function router(navIndex){
+   
+
 indexRouter.get('/',function(req,res){
     res.render("index",
     {
-                nav,
-               title:'Library',
+            navIndex,
+            title:'Library',
                
     });
 });
@@ -22,4 +17,4 @@ indexRouter.get('/',function(req,res){
 
 }
 
-module.exports = author;
+module.exports = router;

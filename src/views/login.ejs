@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%=title%></title>
-  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-<link rel="stylesheet" href="css/login.css">
-<link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/login.css">
+
 
 
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-    <img src="images/bg3.jpg" height="40" width="40">
-    <a class="navbar-brand" href="#"></a>
+    <img src="/jpg/bg3.jpg" height="40" width="40">
+    <a class="navbar-brand" href="#" style=" color:rgb(246, 246, 248); text-decoration:blue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Central Library</a>
+      
     <div class="collapse navbar-collapse">
       <ul class="navbar-nav mr-auto">
 
-        <li class="nav-item active">
+        <li class="nav-item ">
           <a class="nav-link-light btn btn-outline-light" href="/">HOME</a>
         </li> 
 
-        <% for(i=0;i<nav.length;i++){%>
+        <% for(i=0;i<navIndex.length;i++){%>
         <li class="nav-item active ">
-          <a class="nav-link-light btn btn-outline-light" href="<%=nav[i].link%>"><%=nav[i].name%><span class="sr-only">(current)</span></a>
+          <a class="nav-link-light btn btn-outline-light" href="<%=navIndex[i].link%>" style="font-family: 'Times New Roman', Times, serif;"><%=navIndex[i].name%></a>
         </li>
         <%}%>
       </ul>           
@@ -74,7 +74,7 @@
       <div class="card w-100">
         <div class="card text-center">
             <div class="card-header">
-               E-BookReader
+               Central Library
             </div>
             <div class="card-body">
                 <h5 class="card-title">Copyright © 2020.All Rights Reserved</h5>
@@ -83,8 +83,10 @@
             </div>
            
         </div>
-          <script src="js/login.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   
 </body>
 </html>

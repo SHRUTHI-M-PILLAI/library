@@ -1,12 +1,13 @@
 const express = require('express');
 const signupRouter = express.Router();
-function router(nav){
 
 
-    
+
+function router(navIndex){
+        
     signupRouter.get('/',function(req,res){
         res.render("signup",{
-            nav,
+            navIndex,
             title: 'Library'
         });
     });
