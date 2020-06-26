@@ -31,7 +31,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-7">
-        <h1>Books
+        <h1>Book
           <p class="lead"></p>
         </h1>
       </div>     
@@ -49,7 +49,7 @@
           <div class="row">    
             <br>
             <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="/jpg/<%=book.img%>" style="width:100px;height:100px" class="img-circle"></a>
+              <a class="story-title" href="#"><img alt="" src="/jpg/<%=book.image%>" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
               <h3><%=book.title%></h3><br>
@@ -71,7 +71,13 @@
           
           <hr>
           
-          <a href="/books" class="btn btn-primary pull-right btnNext">more <i class="glyphicon glyphicon-chevron-right"></i></a>
+          <a href="/books/update/<%=book._id%>" class="btn btn-primary pull-right btnNext">Update
+             <i class="glyphicon glyphicon-chevron-right"></i>
+            </a>
+          
+          <a href="/books/delete/<%=book._id%>" class="btn btn-primary pull-left btnNext" >Delete 
+            <i class="glyphicon glyphicon-chevron-right"></i>
+          </a>
         
           
         </div>

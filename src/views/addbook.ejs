@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title><%=title%></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="/css/bootstrap.min.css" rel="stylesheet">
+		<link href="/css/books.css" rel="stylesheet">
+	</head>
+	<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary" style="margin-top: -2cm;">
+      <a class="navbar-brand" href="#">
+        <img src="/jpg/bg3.jpg" height="30" width="40">
+        </a> 
+      <a class="navbar-brand" href="#" style=" color:rgb(242, 242, 248); text-decoration:blue; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Central Library</a>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <%for(i=0;i<nav.length;i++){%>
+          <li class="nav-item active">
+            <a class="nav-link" href="<%=nav[i].link%>" style="font-family: 'Times New Roman', Times, serif;"><%=nav[i].name%><span class="sr-only">(current)</span></a>
+             </li>
+          <%}%>
+        </ul>
+      </div> 
+    </nav>
+  </a>
+  
+</nav>
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1 style="color: chartreuse;">Add Book
+          <p class="lead"></p>
+        </h1>
+      </div>     
+    </div> 
+  </div>
+  
+ 
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-md-10" > 
+                 <div class="panel">
+                  <div class="panel-body" style="background-color:lightblue">
+          <div class="row">    
+            
+            <form  method = "POST" action="/admin/add" style="font-size: 20px; color: blue; padding-left: 8cm; ">
+                Title:<input type="text" name="title">
+                <br> <br>
+                Author:<input type="text" name="author">
+                <br> <br>
+                Description:<input type="text" name="description">
+                <br> <br>
+                Genre:<input type="text" name="genre">
+                <br> <br>
+                Image:<input type="file" name="image">
+                <br> <br>
+
+                <button type="submit">Add</button>
+                <br> <br>
+            </form>
+
+          </div>
+             
+          <hr>
+          
+          <a href="/" class="btn btn-primary pull-right btnNext">more <i class="glyphicon glyphicon-chevron-right"></i></a>
+        
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>                                                                                  
+	                                                
+                                                      
+   	
+      <script src=""></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

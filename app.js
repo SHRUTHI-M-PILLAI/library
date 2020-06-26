@@ -13,8 +13,14 @@ const nav = [
         link:'/updates',name:"New Updates"
     },
     {
-        link:'/index',name:'Logout'
+        link:'/admin',name:'Add Book'
     },
+    {
+        link:'/admin1',name:'Add Authors'
+    },
+    {
+        link:'/index',name:'Logout'
+    }
     
 ];
 
@@ -27,6 +33,8 @@ const navIndex = [
     }
 ];
 
+
+app.use(express.urlencoded({extended:true}));
 app.use(express.static('./public'));
 
 const indexRouter = require('./src/routes/indexRouter')(navIndex);
@@ -35,6 +43,9 @@ const authorRouter = require('./src/routes/authorRouter')(nav);
 const loginRouter = require('./src/routes/loginRouter')(navIndex);
 const signupRouter = require('./src/routes/signupRouter')(navIndex);
 const updatesRouter = require('./src/routes/updatesRouter')(nav);
+const adminRouter = require('./src/routes/adminRouter')(nav);
+const admin1Router = require('./src/routes/admin1Router')(nav);
+
 
 
 app.use('/books',booksRouter);
@@ -43,6 +54,9 @@ app.use('/index',indexRouter);
 app.use('/login',loginRouter);
 app.use('/signup',signupRouter);
 app.use('/updates',updatesRouter);
+app.use('/admin',adminRouter);
+app.use('/admin1',admin1Router);
+
 
 app.get('/',function(req,res){
     res.render("index",
